@@ -1,0 +1,49 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hi
+      - hello
+      - good morning
+      - hello there
+      - hey there
+      - sup
+
+  - intent: inform
+    examples: |
+      - [30](temperature)
+      - [15](temperature)
+      - [35](temperature)
+      - [5](temperature)
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - bye bye
+      - ok
+      - thank you
+      - see you
+      - farewell
+      - good night
+      - goodbye
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yep
+      - yeah
+      - of course
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not at all
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you an actual human?
+      - are you an AI?

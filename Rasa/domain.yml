@@ -1,0 +1,35 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - inform
+  - affirm
+  - deny
+  - bot_challenge
+
+entities:
+  - temperature
+
+responses:
+  utter_greet:
+    - text: "Hi, this is your clothing consultant. What's the temperature for today? (in Celcius)"
+
+  utter_rainy:
+    - text: "Please bring an umbrella with you."
+
+  utter_no_rain:
+    - text: "That's great!"
+
+  utter_bye:
+    - text: "Bye, have a nice day~"
+
+  utter_bot:
+    - text: "I'm a chatbot powered by Rasa."
+
+actions:
+  - action_temperature
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
