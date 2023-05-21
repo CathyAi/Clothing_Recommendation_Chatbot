@@ -1,0 +1,48 @@
+.container {
+    float: left;
+    width: 30%;
+    border: 2px solid #00BFFF;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.container_right {
+    float: right;
+    width: 30%;
+    border: 2px solid #FFEA00;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.time-left {
+    position: bottom;
+    float: left;
+    color: #aaa;
+}
+
+.time-right {
+    position: bottom;
+    float: right;
+    color: #aaa;
+}
+
+.avatar {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.avatar_right {
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.center {
+    max-width: 800px;
+    margin: auto;
+}

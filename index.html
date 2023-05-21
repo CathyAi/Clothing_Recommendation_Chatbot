@@ -1,0 +1,35 @@
+<html>
+    <body>
+    <style>
+        .rw-conversation-container .rw-header{background-color: #00629B;}
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color: #daa520;}
+        .rw-launcher{background-color: #182B49;}
+        .rw-conversation-container .rw-reply{background-color: ; border: ;}
+    </style>
+        <script>!(function () {
+          let e = document.createElement("script"),
+            t = document.head || document.getElementsByTagName("head")[0];
+          (e.src =
+            "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+            // Replace 1.x.x with the version that you want
+            (e.async = !0),
+            (e.onload = () => {
+              window.WebChat.default(
+                {
+                  customData: { language: "en" },
+                  socketUrl: "http://localhost:5005",
+                  title: "Clothing Recommendation Bot",
+                  subtitle: "Say hi to get started!",
+                  showMessageDate: true,
+                  inputTextFieldHint: "Type message here...",
+                  showFullScreenButton: true,
+                  profileAvatar: "https://static.vecteezy.com/system/resources/previews/010/054/157/original/chat-bot-robot-avatar-in-circle-round-shape-isolated-on-white-background-stock-illustration-ai-technology-futuristic-helper-communication-conversation-concept-in-flat-style-vector.jpg",
+                },
+                null
+              );
+            }),
+            t.insertBefore(e, t.firstChild);
+        })();
+        </script>
+    </body>
+</html>
